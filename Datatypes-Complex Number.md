@@ -12,8 +12,31 @@ To write a Python program that reads two integers, creates a complex number usin
 6. Print the imaginary part of `x` using `x.imag`.
 
 ## 💻 Program
-Add Code Here
+~~~
 
+a = int(input("Enter the real part: "))
+
+
+b = int(input("Enter the imaginary part: "))
+
+
+x = complex(a, b)
+
+
+print("Complex number:", x)
+
+
+print("Real part:", x.real)
+
+
+print("Imaginary part:", x.imag)
+~~~
 ## Output
+Enter the real part: 5
+Enter the imaginary part: 3
+Complex number: (5+3j)
+Real part: 5.0
+Imaginary part: 3.0
 
 ## Result
+he program successfully demonstrates how to create and manipulate complex data types in Python.The complex(a, b) constructor builds a number in the form $a + bj$.Even if you input integers, the .real and .imag attributes return floating-point values (e.g., 5.0), which is the standard behavior for the complex class in Python.
